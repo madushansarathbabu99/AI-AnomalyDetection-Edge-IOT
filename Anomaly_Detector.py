@@ -1,5 +1,5 @@
 #type: ignore
-# ============================================================================
+# ===========================================================================
 # EDGE IOT ANOMALY DETECTION - GUI APPLICATION
 # ============================================================================
 # A comprehensive GUI for training, monitoring, and controlling the anomaly
