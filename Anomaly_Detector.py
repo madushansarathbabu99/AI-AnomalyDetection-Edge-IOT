@@ -430,7 +430,6 @@ class AnomalyDetectionGUI:
         self.history_ax.spines['right'].set_visible(False)
         self.history_ax.grid(True, alpha=0.2, color='white')
         self.history_ax.set_title('Detection Timeline', color='white', fontsize=10)
-        "self.history_ax.set_xlabel('Sample Number', color='white', fontsize=9)"
         self.history_ax.set_ylabel('Status', color='white', fontsize=9)
         
         self.history_canvas = FigureCanvasTkAgg(self.history_fig, master=history_frame)
@@ -797,7 +796,7 @@ class AnomalyDetectionGUI:
         self.ax3.set_title('Temperature (°C)', color='white', fontsize=11, pad=10, fontweight='bold')
         self.ax4.set_title('Network In (KB/s)', color='white', fontsize=11, pad=10, fontweight='bold')
         self.ax5.set_title('Failed Auth Attempts', color='white', fontsize=11, pad=10, fontweight='bold')
-       "self.ax3.set_xlabel('Sample Number', color='white', fontsize=10)"
+      
         
         self.fig.tight_layout(pad=3.0)
         
@@ -1699,7 +1698,6 @@ Per-Class Performance:
         self.history_ax.spines['right'].set_visible(False)
         self.history_ax.grid(True, alpha=0.2, color='white')
         self.history_ax.set_title('Detection Timeline', color='white', fontsize=10)
-        "self.history_ax.set_xlabel('Sample Number', color='white', fontsize=9)"
         self.history_ax.set_ylabel('Status', color='white', fontsize=9)
         self.history_ax.legend(loc='upper left', facecolor='#2d2d2d', edgecolor='white', labelcolor='white', fontsize=8)
         
@@ -1782,7 +1780,7 @@ Per-Class Performance:
             if len(timestamps) > 1:
                 ax.set_xlim(timestamps[0], timestamps[-1])
         
-       " self.ax3.set_xlabel('Sample Number', color='white', fontsize=10)"
+    
         
         self.fig.tight_layout(pad=3.0)
         self.plot_canvas.draw()
