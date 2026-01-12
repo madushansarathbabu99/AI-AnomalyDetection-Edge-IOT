@@ -12,7 +12,7 @@ np.random.seed(RANDOM_SEED)
 
 
 def generate_temporal_pattern(n_samples, base_value, amplitude, period):
-    """Generate cyclic temporal pattern (e.g., daily cycles)."""
+    """Generate cyclic temporal pattern"""
     t = np.arange(n_samples)
     return base_value + amplitude * np.sin(2 * np.pi * t / period)
 

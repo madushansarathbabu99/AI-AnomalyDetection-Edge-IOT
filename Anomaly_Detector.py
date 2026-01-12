@@ -1,10 +1,5 @@
 #type: ignore
-# ===========================================================================
-# EDGE IOT ANOMALY DETECTION - GUI APPLICATION
-# ============================================================================
-# A comprehensive GUI for training, monitoring, and controlling the anomaly
-# detection system with real-time visualization and dashboard integration.
-# ============================================================================
+
 
 import tkinter as tk
 from tkinter import ttk, scrolledtext, messagebox
@@ -21,7 +16,7 @@ from matplotlib.figure import Figure
 import webbrowser
 from datetime import datetime
 
-# Import our models and utilities
+# Import  models and utilities
 try:
     from src.data_generator import generate_synthetic_iot_data
     from src.train_all_models import train_all_models

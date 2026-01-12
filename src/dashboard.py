@@ -1,7 +1,6 @@
 """
 Interactive Streamlit dashboard for model comparison and visualization.
 
-Run with: streamlit run dashboard.py
 """
 import os
 import sys
