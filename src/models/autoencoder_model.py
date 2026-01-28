@@ -113,10 +113,10 @@ class AutoencoderDetector:
     def load(self, model_path=AE_MODEL_PATH, threshold_path=AE_THRESHOLD_PATH):
         """Load model and threshold."""
 
-    # Ensure we load the modern Keras format if config still points to .h5
+    # Ensure to load the modern Keras format if config still points to .h5
         model_path = model_path.replace(".h5", ".keras")
 
-    # compile=False avoids legacy deserialization issues (e.g., keras.metrics.mse)
+    # compile=False avoids legacy deserialization issues 
         self.model = models.load_model(model_path, compile=False)
 
         self.threshold = joblib.load(threshold_path)

@@ -11,21 +11,21 @@
     "false_negatives": 0,
     "false_positive_rate": 0.002916666666666667,
     "false_negative_rate": 0.0,
-    "avg_inference_time_ms": 6.287172997836024
+    "avg_inference_time_ms": 4.5729000004939735
   },
   "Autoencoder": {
-    "accuracy": 0.9470588235294117,
-    "precision": 0.5263157894736842,
+    "accuracy": 0.9513725490196079,
+    "precision": 0.5474452554744526,
     "recall": 1.0,
-    "f1_score": 0.6896551724137931,
+    "f1_score": 0.7075471698113207,
     "roc_auc": 1.0,
     "true_positives": 150,
-    "true_negatives": 2265,
-    "false_positives": 135,
+    "true_negatives": 2276,
+    "false_positives": 124,
     "false_negatives": 0,
-    "false_positive_rate": 0.05625,
+    "false_positive_rate": 0.051666666666666666,
     "false_negative_rate": 0.0,
-    "avg_inference_time_ms": 55.69576499983668
+    "avg_inference_time_ms": 48.68653900222853
   },
   "LSTM": {
     "accuracy": 0.9996064541519087,
@@ -39,6 +39,6 @@
     "false_negatives": 1,
     "false_positive_rate": 0.0,
     "false_negative_rate": 0.006711409395973154,
-    "avg_inference_time_ms": 54.404260996961966
+    "avg_inference_time_ms": 56.75199700053781
   }
 }

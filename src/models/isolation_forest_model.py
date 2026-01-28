@@ -41,7 +41,7 @@ class IsolationForestDetector:
             predictions: 0 for normal, 1 for anomaly
         """
         raw_preds = self.model.predict(X)
-        # Convert: 1 (normal) -> 0, -1 (anomaly) -> 1
+        
         return np.where(raw_preds == -1, 1, 0)
     
     def predict_scores(self, X):

@@ -35,7 +35,7 @@ def generate_synthetic_iot_data(save: bool = True) -> pd.DataFrame:
     """
     
     # ----- Normal behavior with temporal patterns -----
-    # Add daily cycles to make data more realistic
+    
     cpu_base = generate_temporal_pattern(N_NORMAL, 35, 8, 500)
     mem_base = generate_temporal_pattern(N_NORMAL, 40, 10, 500)
     
@@ -108,7 +108,7 @@ def generate_synthetic_iot_data(save: bool = True) -> pd.DataFrame:
     
     df = pd.concat([normal, anomaly], ignore_index=True)
     
-    # Add timestamp column for realism
+    # Add timestamp column 
     df['timestamp'] = pd.date_range(
         start='2024-01-01', periods=len(df), freq='1min'
     )
