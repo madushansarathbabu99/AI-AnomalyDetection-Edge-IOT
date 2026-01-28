@@ -177,7 +177,7 @@ class AnomalyDetectionGUI:
         
         title_label = ttk.Label(
             title_frame,
-            text="🔍 Edge IoT Anomaly Detection System - Control Center",
+            text="Edge IoT Anomaly Detection System - Control Center",
             style='Title.TLabel'
         )
         title_label.pack(side=tk.LEFT)
